@@ -26,6 +26,10 @@ header {
     padding: 0 20px;
 }
 
+article1 {
+    text-align: justify;
+}
+
 .foto-perfil {
     width: 180px;
     height: 180px;
