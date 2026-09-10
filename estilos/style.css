@@ -36,6 +36,10 @@ header {
     border: 3px solid #3498db; /* Borda azul para dar destaque */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+.foto-icones{
+    border: 0px solid #3498db;
+
+}
 
 .apresentacao h1 {
     font-size: 2.8rem;
