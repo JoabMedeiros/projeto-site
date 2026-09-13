@@ -13,6 +13,17 @@ body {
     color: #e3e3e3; /* Texto em cinza claro para não cansar a vista */
     line-height: 2;
 }
+/* Formatação da Tabela de Links das Redes Socials */
+table#tabelaLinks{
+    border: 1px solid #0a578a;
+
+}
+
+table#tabelaLinks td{
+    border: 1px solid #0a578a;
+    padding: 3px;
+    text-align: center;
+}
 
 /* =========================================
    Cabeçalho (Foto na esquerda e texto ao lado)
