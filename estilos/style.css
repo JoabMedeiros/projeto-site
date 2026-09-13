@@ -19,10 +19,25 @@ table#tabelaLinks{
 
 }
 
+table#tabelaLinks caption{
+    border: 1px solid #0a578a;
+    background-color: #0a578a;
+    font-weight: bold;
+    font-size: large;
+}
+
 table#tabelaLinks td{
     border: 1px solid #0a578a;
     padding: 3px;
     text-align: center;
+}
+
+table#tabelaLinks td.ce{
+    background-color: #0a578a;
+}
+
+table#tabelaLinks td.cd{
+    background-color: antiquewhite;
 }
 
 /* =========================================
