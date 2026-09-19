@@ -1,13 +1,36 @@
 @charset "UTF-8";
 
 form{
-    width: 550px;
+    width: 750px;
     margin: auto;
 }
+
+input, textarea{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 14pt;
+}
+
+input:hover, textarea:hover{
+    background-color: #dddddd;
+}
+
+legend{
+    color: #888888;
+    font-weight: bold;
+    font-size: 14;
+    font-family: sans-serif;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+}
+
 input#cEnviar{
     width: 100px;
     height: 30px;
     font-size: larger;
-    border: 3px solid #3498db;
     margin-top: 5px;
 }
