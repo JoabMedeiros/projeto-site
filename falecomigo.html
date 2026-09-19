@@ -22,13 +22,13 @@
             <form id="falecomigo" method="post" action="">
                 <fieldset id="usuario">
                     <legend>Identificação do Usuário</legend>
-                        <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="50" maxlength="80" placeholder="Nome Completo"/></p>
-                        <p><label for="cMail">Email: </label><input type="email" name="tEmail" id="cMail" size="50" maxlength="35" placeholder="seuemail@email.com"/></p>
-                        <p><label for="cWhats">WhatsApp:</label><input type="tel" name="tWhats" id="cWhats" size="20" maxlength="16" placeholder="(xx) 9 9999-9999"></p>
+                        <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="50" maxlength="80" placeholder="Nome Completo" required/></p>
+                        <p><label for="cMail">Email: </label><input type="email" name="tEmail" id="cMail" size="50" maxlength="35" placeholder="seuemail@email.com" required/></p>
+                        <p><label for="cWhats">WhatsApp:</label><input type="tel" name="tWhats" id="cWhats" size="20" maxlength="16" placeholder="(xx) 9 9999-9999" required></p>
                 </fieldset>
                 <fieldset id="mensagem">
                     <legend>Mensagem</legend>
-                        <p><label for="cTexto">Texto:</label><textarea name="cTexto" id="cTexto" cols="52" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+                        <p><label for="cTexto">Texto:</label><textarea name="cTexto" id="cTexto" cols="52" rows="5" placeholder="Deixe aqui sua mensagem" required></textarea></p>
                 </fieldset>
 
                 <input type="submit" name="tEnviar" id="cEnviar"/>
