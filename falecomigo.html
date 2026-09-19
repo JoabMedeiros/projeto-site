@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Joab Medeiros</title>
     <link rel="stylesheet" href="estilos/formulario.css">
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <div id="interface">
@@ -17,17 +18,21 @@
             </div>
             </header>
 
-            <form id="falecomigo">
-                <fieldset id="identificacao">
+            <form id="falecomigo" method="post" action="">
+                <fieldset id="usuario">
                     <legend>Identificação do Usuário</legend>
-                        Nome:
-                        WhatsApp:
-                        Email:
+                        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="50" maxlength="80" placeholder="Nome Completo"/></p>
+                        <p><label for="cWhats">WhatsApp:</label><input type="tel" name="tWhats" id="cWhats" size="20" maxlength="16" placeholder="(xx) 9 9999-9999"></p>
+                        <p><label for="cMail">Email:</label><input type="email" name="tEmail" id="cMail" size="50" maxlength="35" placeholder="seuemail@email.com"/></p>
                 </fieldset>
-                <fieldset id="menssagem">
-                    <legend>Menssagem</legend>
-                        Texto:
+                <fieldset id="mensagem">
+                    <legend>Mensagem</legend>
+                        <p><label for="cTexto">Texto:</label><textarea name="cTexto" id="cTexto" cols="50" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
                 </fieldset>
+
+                <input type="submit"/>
+                <input type="image" src="imagens/enviar.png"/>
+
             </form>
         </main>
 </div>
