@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+form{
+    width: 550px;
+    margin: auto;
+}
+input#cEnviar{
+    width: 100px;
+    height: 30px;
+    font-size: larger;
+    border: 3px solid #3498db;
+    margin-top: 5px;
+}
