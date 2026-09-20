@@ -20,6 +20,9 @@
             <h1>Fale Comigo:</h1>
 
             <form id="falecomigo" action="https://formsubmit.co/joab.medeiros@aluno.uepb.edu.br" method="POST">
+
+                <input type="hidden" name="_captcha" value="false">
+
                 <fieldset id="usuario">
                     <legend>Identificação do Usuário</legend>
                         <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="50" maxlength="80" placeholder="Nome Completo" required/></p>
@@ -28,7 +31,7 @@
                 </fieldset>
                 <fieldset id="mensagem">
                     <legend>Mensagem</legend>
-                        <p><label for="cTexto">Texto:</label><textarea name="cTexto" id="cTexto" cols="52" rows="5" placeholder="Deixe aqui sua mensagem" required></textarea></p>
+                        <p><label for="cTexto">Texto:</label><textarea name="tTexto" id="cTexto" cols="52" rows="5" placeholder="Deixe aqui sua mensagem" required></textarea></p>
                 </fieldset>
 
                 <input type="submit" name="tEnviar" id="cEnviar"/>
