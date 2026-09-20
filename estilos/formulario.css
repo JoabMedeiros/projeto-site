@@ -29,8 +29,14 @@ fieldset{
 }
 
 input#cEnviar{
-    width: 100px;
-    height: 30px;
-    font-size: larger;
-    margin-top: 5px;
+    background-color: #007bff; /* Um azul bem bonito */
+    color: white; /* Texto branco */
+    border: none; /* Tira a borda padrão do botão */
+    border-radius: 5px; /* Deixa as bordas arredondadas */
+    padding: 10px 20px; /* Dá um espaço dentro do botão */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; /* Muda a setinha do mouse para a mãozinha */
+    margin-top: 15px;
+    transition: background-color 0.3s; /* Faz a mudança de cor ser suave */
 }
