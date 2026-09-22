@@ -28,6 +28,30 @@ fieldset{
     margin: 20px;
 }
 
+/* Container para alinhar o botão à direita */
+.container-voltar {
+    width: 750px; /* Mesma largura do seu form */
+    margin: 0 auto 15px auto; /* Centraliza a caixa e dá espaço para o formulário */
+    text-align: right; /* Empurra o botão para o lado direito */
+}
+
+/* Estilo do botão de voltar */
+.btn-voltar {
+    display: inline-block;
+    background-color: #3498db; /* Azul combinando com a borda da sua foto de perfil */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #2980b9; /* Azul um pouco mais escuro ao passar o mouse */
+}
+
 input#cEnviar{
     background-color: #007bff; /* Um azul bem bonito */
     color: white; /* Texto branco */
