@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['tNome'];
     $email_visitante = $_POST['tEmail'];
     $whatsapp = $_POST['tWhats'];
-    $mensagem = $_POST['cTexto'];
+    $mensagem = $_POST['tTexto'];
 
     // Cria uma nova instância do PHPMailer
     $mail = new PHPMailer(true);
@@ -25,8 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();                                            // Define que usará SMTP
         $mail->Host       = 'smtp.gmail.com';                       // Servidor do Gmail
         $mail->SMTPAuth   = true;                                   // Habilita autenticação
-        $mail->Username   = 'seu_novo_email@gmail.com';             // SEU E-MAIL (O QUE VAI ENVIAR)
-        $mail->Password   = 'sua_senha_de_app_aqui_sem_espacos';    // SUA SENHA DE APP DO GOOGLE
+        $mail->Username   = 'mensageiro.formulario@gmail.com';             // SEU E-MAIL (O QUE VAI ENVIAR)
+        $mail->Password   = 'nvewtqmcvrcuktld';    // SUA SENHA DE APP DO GOOGLE
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Tipo de segurança
         $mail->Port       = 587;                                    // Porta do Gmail
         $mail->CharSet    = 'UTF-8';                                // Para não dar erro em acentos
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // REMETENTE E DESTINATÁRIOS
         // ==========================================
         // Quem está enviando (o e-mail do seu robô)
-        $mail->setFrom('seu_novo_email@gmail.com', 'Site Portfólio');
+        $mail->setFrom('mensageiro.formulario@gmail.com', 'Site Portfólio');
         
         // Para quem vai a mensagem (pode ser o seu e-mail pessoal ou o da UEPB)
         $mail->addAddress('joab.medeiros@aluno.uepb.edu.br', 'Joab Medeiros'); 
