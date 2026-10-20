@@ -36,10 +36,11 @@ fieldset{
 }
 
 /* Estilo do botão de voltar */
+/* Estilo do botão de voltar */
 .btn-voltar {
     display: inline-block;
-    background-color: #3498db; /* Azul combinando com a borda da sua foto de perfil */
-    color: #ffffff;
+    background-color: #B29775; /* Champagne */
+    color: #292525; /* Grafite */
     text-decoration: none;
     font-size: 14pt;
     font-weight: bold;
@@ -49,18 +50,22 @@ fieldset{
 }
 
 .btn-voltar:hover {
-    background-color: #2980b9; /* Azul um pouco mais escuro ao passar o mouse */
+    background-color: #9A8062; /* Champagne um pouco mais escuro */
 }
 
-input#cEnviar{
-    background-color: #007bff; /* Um azul bem bonito */
+input#cEnviar {
+    background-color: #64283B; /* Vinho */
     color: white; /* Texto branco */
-    border: none; /* Tira a borda padrão do botão */
-    border-radius: 5px; /* Deixa as bordas arredondadas */
-    padding: 10px 20px; /* Dá um espaço dentro do botão */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer; /* Muda a setinha do mouse para a mãozinha */
+    cursor: pointer;
     margin-top: 15px;
-    transition: background-color 0.3s; /* Faz a mudança de cor ser suave */
+    transition: background-color 0.3s;
+}
+
+input#cEnviar:hover {
+    background-color: #4A1D2B; /* Vinho mais escuro */
 }

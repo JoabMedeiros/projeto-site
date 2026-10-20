@@ -1,5 +1,5 @@
 /* =========================================
-   Reset Básico
+    Reset Básico
    ========================================= */
 * {
     margin: 0;
@@ -9,39 +9,13 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #131314; /* Cor escura baseada na sua imagem */
-    color: #e3e3e3; /* Texto em cinza claro para não cansar a vista */
+    background-color: #F0E6DD; /* Off-white */
+    color: #292525; /* Grafite para texto principal */
     line-height: 2;
-}
-/* Formatação da Tabela de Links das Redes Socials */
-table#tabelaLinks{
-    border: 1px solid #0a578a;
-
-}
-
-table#tabelaLinks caption{
-    border: 1px solid #0a578a;
-    background-color: #0a578a;
-    font-weight: bold;
-    font-size: large;
-}
-
-table#tabelaLinks td{
-    border: 1px solid #0a578a;
-    padding: 3px;
-    text-align: center;
-}
-
-table#tabelaLinks td.ce{
-    background-color: #0a578a;
-}
-
-table#tabelaLinks td.cd{
-    background-color: antiquewhite;
 }
 
 /* =========================================
-   Cabeçalho (Foto na esquerda e texto ao lado)
+    Cabeçalho (Foto na esquerda e texto ao lado)
    ========================================= */
 header {
     display: flex; /* Coloca os elementos lado a lado */
@@ -52,35 +26,40 @@ header {
     padding: 0 20px;
 }
 
-
-
 .foto-perfil {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #3498db; /* Borda azul para dar destaque */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-}
-.foto-icones{
-    border: 0px solid #3498db;
-
+    border: 3px solid #64283B; /* Vinho para a borda */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais suave para fundo claro */
 }
 
 .apresentacao h1 {
     font-size: 2.8rem;
-    color: #ffffff;
+    color: #64283B; /* Vinho para o nome */
     margin-bottom: 5px;
 }
 
 .apresentacao p {
     font-size: 1.3rem;
-    color: #a0a0a0;
-    font-weight: 300;
+    color: #292525; /* Grafite */
+    font-weight: 500;
 }
 
+.apresentacao .slogan {
+    background-color: #64283B; /* Vinho */
+    color: #F0E6DD; /* Off-white */
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+
 /* =========================================
-   Seções Principais (Sobre, Habilidades, etc)
+    Seções Principais (Sobre, Contatos)
    ========================================= */
 main {
     max-width: 900px;
@@ -88,30 +67,33 @@ main {
     padding: 0 20px;
 }
 
-section {
-    background-color: #1e1e1e; /* Fundo dos cards um pouco mais claro que a página */
+section, article {
+    background-color: #ffffff; /* Fundo branco para os blocos de texto */
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-}
-article {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
     text-align: justify;
-}
-p {
     text-indent: 50px;
 }
 
-section h2 {
-    color: #ffffff;
+article h2 {
+    color: #64283B; /* Vinho */
     margin-bottom: 20px;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #B29775; /* Champagne para a linha do título */
     padding-bottom: 5px;
     display: inline-block;
+    text-indent: 0; /* Remove indentação do título */
+}
+
+article h3 {
+    text-indent: 0;
+    color: #292525;
+    margin-bottom: 15px;
 }
 
 /* =========================================
-   Habilidades / Ícones
+    Habilidades / Ícones (Agora Contatos)
    ========================================= */
 .habilidades {
     display: flex;
@@ -125,20 +107,9 @@ section h2 {
     width: 60px;
     height: 60px;
     transition: transform 0.3s ease;
+    border-radius: 10px; /* Leve arredondamento nas logos */
 }
 
 .habilidades img:hover {
     transform: scale(1.15); /* Aumenta o zoom ao passar o mouse */
-}
-
-/* =========================================
-   Rodapé
-   ========================================= */
-footer {
-    text-align: center;
-    padding: 25px;
-    background-color: #1e1e1e;
-    color: #888888;
-    margin-top: 40px;
-    border-top: 1px solid #333333;
 }

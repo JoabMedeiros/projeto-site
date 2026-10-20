@@ -25,8 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();                                            // Define que usará SMTP
         $mail->Host       = 'smtp.gmail.com';                       // Servidor do Gmail
         $mail->SMTPAuth   = true;                                   // Habilita autenticação
-        $mail->Username   = 'mensageiro.formulario@gmail.com';             // SEU E-MAIL (O QUE VAI ENVIAR)
-        $mail->Password   = 'nvewtqmcvrcuktld';    // SUA SENHA DE APP DO GOOGLE
+        $mail->Username   = 'mensageiro.formulario@gmail.com';      // SEU E-MAIL (O QUE VAI ENVIAR)
+        $mail->Password   = 'senhaApp';    // SUA SENHA DE APP DO GOOGLE
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Tipo de segurança
         $mail->Port       = 587;                                    // Porta do Gmail
         $mail->CharSet    = 'UTF-8';                                // Para não dar erro em acentos
