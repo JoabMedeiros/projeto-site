@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();                                            // Define que usará SMTP
         $mail->Host       = 'smtp.gmail.com';                       // Servidor do Gmail
         $mail->SMTPAuth   = true;                                   // Habilita autenticação
-        $mail->Username   = 'mensageiro.formulario@gmail.com';      // SEU E-MAIL (O QUE VAI ENVIAR)
+        $mail->Username   = 'mensageiro.formulario@gmail.com';    
         $mail->Password   = 'senhaApp';    // SUA SENHA DE APP DO GOOGLE
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Tipo de segurança
         $mail->Port       = 587;                                    // Porta do Gmail
@@ -35,10 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // REMETENTE E DESTINATÁRIOS
         // ==========================================
         // Quem está enviando (o e-mail do seu robô)
-        $mail->setFrom('mensageiro.formulario@gmail.com', 'Site Portfólio');
+        $mail->setFrom('mensageiro.formulario@gmail.com', 'Site Adv Juliana Lucena');
         
-        // Para quem vai a mensagem (pode ser o seu e-mail pessoal ou o da UEPB)
-        $mail->addAddress('joab.medeiros@aluno.uepb.edu.br', 'Joab Medeiros'); 
+        
+        $mail->addAddress('advjulianalucena@gmail.com', 'Juliana Lucena'); 
         
         // Se você clicar em "Responder" no seu Gmail, a resposta vai para o e-mail do visitante
         $mail->addReplyTo($email_visitante, $nome);
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // CONTEÚDO DO E-MAIL
         // ==========================================
         $mail->isHTML(true); // Define que o e-mail aceita formatação HTML
-        $mail->Subject = 'Novo contato no Portfólio de: ' . $nome;
+        $mail->Subject = 'Novo contato no Site Adv Juliana Lucena de: ' . $nome;
         
         // Montando o corpo do e-mail com quebras de linha (<br>)
         $corpo = "<h3>Você recebeu uma nova mensagem!</h3>";
